@@ -13,20 +13,23 @@ package frc.robot;
  * constants are needed, to reduce verbosity.
  */
 public final class Constants {
+
   public static final int kJoystickIndex = 0;
 
   public static final class BlinkyDrivetrainConstants {
-
+    //motor id's
     public static final int m_leftDrive = 5;
     public static final int m_leftDrive2 = 2;
     public static final int m_rightDrive = 3;
     public static final int m_rightDrive2 = 4;
     
+    //speed settings
     public static final double DrivePercentage = 0.8;
     public static final double RotatePercentage = 0.8;
   }
 
   public static final class BlinkyIntakeConstants{
+    //motor id's
     public static final int m_leftIntake  = 1;
     public static final int m_rightIntake = 2;
     public static final int m_Storage     = 0;

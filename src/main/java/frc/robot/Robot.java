@@ -8,11 +8,11 @@ import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
+//controller
+import edu.wpi.first.wpilibj.XboxController;
+
 //submodules
 import frc.robot.subsystems.*;
-
-
-import edu.wpi.first.wpilibj.XboxController;
 
 
 /**
@@ -28,7 +28,7 @@ public class Robot extends TimedRobot {
   private BlinkyIntake BI = new BlinkyIntake();
 
   //controller
-  private final XboxController m_controller = new XboxController(0);
+  private final XboxController m_controller = new XboxController(Constants.kJoystickIndex);
 
 
   /**

@@ -9,7 +9,7 @@ import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
 //import settings
-import frc.robot.Constants.BlinkyDrivetrainConstants;;
+import frc.robot.Constants.BlinkyDrivetrainConstants;
 
 //create class with autoclosable (do this when closed)
 public class BlinkyDrivetrain implements AutoCloseable{

@@ -14,10 +14,10 @@ import frc.robot.Constants.BlinkyDrivetrainConstants;;
 //create class with autoclosable (do this when closed)
 public class BlinkyDrivetrain implements AutoCloseable{
     
-    private final WPI_VictorSPX m_leftDrive = new WPI_VictorSPX(5);
-    private final WPI_TalonSRX m_leftDrive2 = new WPI_TalonSRX(2);
-    private final WPI_VictorSPX m_rightDrive = new WPI_VictorSPX(3);
-    private final WPI_TalonSRX m_rightDrive2 = new WPI_TalonSRX(4);
+    private final WPI_VictorSPX m_leftDrive = new WPI_VictorSPX(BlinkyDrivetrainConstants.m_leftDrive);
+    private final WPI_TalonSRX m_leftDrive2 = new WPI_TalonSRX(BlinkyDrivetrainConstants.m_leftDrive2);
+    private final WPI_VictorSPX m_rightDrive = new WPI_VictorSPX(BlinkyDrivetrainConstants.m_rightDrive);
+    private final WPI_TalonSRX m_rightDrive2 = new WPI_TalonSRX(BlinkyDrivetrainConstants.m_rightDrive2);
     private final DifferentialDrive m_robotDrive = new DifferentialDrive(m_leftDrive, m_rightDrive);
 
     public double DrivePercentage = 0.8;

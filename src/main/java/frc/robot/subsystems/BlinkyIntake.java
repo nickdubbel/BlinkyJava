@@ -3,12 +3,15 @@ package frc.robot.subsystems;
 //motors
 import edu.wpi.first.wpilibj.motorcontrol.PWMSparkMax;
 
+//import sttings
+import frc.robot.Constants.BlinkyIntakeConstants;
+
 public class BlinkyIntake implements AutoCloseable {
 
     //arms
-    private final PWMSparkMax m_leftIntake = new PWMSparkMax(1);
-    private final PWMSparkMax m_rightIntake = new PWMSparkMax(2);
-    private final PWMSparkMax m_Storage = new PWMSparkMax(0);
+    private final PWMSparkMax m_leftIntake = new PWMSparkMax(BlinkyIntakeConstants.m_leftIntake);
+    private final PWMSparkMax m_rightIntake = new PWMSparkMax(BlinkyIntakeConstants.m_rightIntake);
+    private final PWMSparkMax m_Storage = new PWMSparkMax(BlinkyIntakeConstants.m_Storage);
 
 
 
